@@ -12,7 +12,8 @@ int main()
     char buf[4][4];
     for (int i = 0; i < 4; i++)
     {
-        fscanf(stdin,"%s",buf[i]);
+        fscanf(stdin,"%s",buf[i]); //fscanf process about space and \n char. so we don't need to getchar() before fscanf. but when we finish fscanf, and we write additional input data using another input function not to process \n or space, we need to use getchar().
+        //buffer can have space and \n. If input = "h1 h2 h3 h4 \n", buffer has " \n". so we need to use getchar twice.
     }
     for (int i = 0; i < 4; i++)
     {
@@ -20,6 +21,7 @@ int main()
         fprintf(stdout,"\n");
     }
 
+    //getchar();//for buffer flush ' '?
     getchar();//for buffer flush \n?
     char buff[10];
     fgets(buff,sizeof(buff),stdin);//for space included in string
