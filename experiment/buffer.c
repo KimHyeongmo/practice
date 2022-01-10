@@ -9,4 +9,5 @@ Sequential string datas have to ignore space and splitted.
 int main()
 {
     printf("hi");
+    printf("ignore");
 }
