@@ -10,4 +10,5 @@ int main()
 {
     printf("hi");
     printf("ignore");
+    printf("ignore2");
 }
