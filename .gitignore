@@ -8,3 +8,6 @@
 
 # Unignoer all dirs
 !*/
+
+*.out
+*.o
